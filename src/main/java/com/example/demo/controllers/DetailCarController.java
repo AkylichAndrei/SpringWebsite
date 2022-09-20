@@ -34,13 +34,13 @@ public class DetailCarController {
 
         DetailModel detailModel = new DetailModel();
         detailModel.setItemModel(itemModel1);
-        detailModel.setUsdPrise(currencyService.getUSD(itemModel1.getPrice()));
-        detailModel.setEurPrice(currencyService.getEUR(itemModel1.getPrice()));
+       // detailModel.setUsdPrise(currencyService.getUSD(itemModel1.getPrice()));
+        //detailModel.setEurPrice(currencyService.getEUR(itemModel1.getPrice()));
 
         //model.addAttribute("car", itemModel);
         model.addAttribute("car", detailModel);
-        model.addAttribute("priceUsd", currencyService.getUSD(itemModel1.getPrice()));
-        model.addAttribute("priceEur",currencyService.getEUR(itemModel1.getPrice()));
+        //model.addAttribute("priceUsd", currencyService.getUSD(itemModel1.getPrice()));
+       // model.addAttribute("priceEur",currencyService.getEUR(itemModel1.getPrice()));
         return "detailCar";
 
     }
